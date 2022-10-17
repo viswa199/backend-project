@@ -1,0 +1,9 @@
+<h1 class="mt-4">Dashboard</h1>
+<img src="<%= url %>" class="img-circle" width="100px" height="100px" alt="<%= name %>">
+<form action="/dashboard" method="post" enctype="multipart/form-data">
+  <input type="file" name="profile">
+  <input type="submit" value="update">
+</form>
+<p class="lead mb-3">Welcome <%= username %></p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<a href="/dashboard/myprofiles" class="btn btn-secondary">My Profile Photos</a>

@@ -1,0 +1,5 @@
+<p>My Profile Pictures</p>
+<% for(var i=0;i< profiles.length;i++){ %>
+    <img src="<%= profiles[i].url %>" width="200px" height="200px" alt="<%= profiles[i].name %>">
+    <p><%= profiles[i].name %></p>
+<% } %>
